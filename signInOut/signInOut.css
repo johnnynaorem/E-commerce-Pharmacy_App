@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --primary-color: black;
+  --secondary-color: #a8a4a4;
+  --color-white: #ffffff;
+  --border-color: yellow;
+}
+
+.signInOutContain {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(image/Backdrop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 600px;
+  border-radius: 30px;
+  border: 2px solid var(--border-color);
+  background-color: var(--color-white);
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cancleBox {
+  position: relative;
+  bottom: 400px;
+}
+.cancleBox img {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+.selectorInOut {
+  height: 60px;
+  width: 450px;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.selectorInOut .inner-selectorInOut {
+  height: 100%;
+  width: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#selectUp {
+  background-color: var(--secondary-color);
+}
+#selectIn {
+  background-color: var(--secondary-color);
+}
+.active-color {
+  background-color: var(--primary-color) !important;
+}
+
+.container .inner-container-signUp {
+  display: none;
+}
+.container .inner-container-signIn {
+  display: none;
+}
+.container .active {
+  display: block;
+}
+.container .noActive {
+  display: none;
+}
+.signUpBox {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.signUpBox h5 {
+  font-size: 24px;
+
+  font-style: normal;
+  font-weight: 500;
+  margin: 30px;
+}
+.signUpBox button {
+  height: 60px;
+  width: 400px;
+  border-radius: 20px;
+  margin: 10px;
+  background-color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.signUpBox button span {
+  margin-left: 10px;
+}
+.or {
+  height: 20px;
+  width: 400px;
+}
+
+.or {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 20px 0;
+}
+.or::before,
+.or::after {
+  content: "";
+  height: 2px;
+  width: 40%;
+  background-color: var(--secondary-color);
+  display: block;
+}
+.formContain {
+  width: 400px;
+  color: var(--secondary-color);
+}
+
+.formLayout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.formLayoutIn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+  height: 295px;
+}
+.formLayoutIn label {
+  display: flex;
+  flex-direction: column;
+}
+.formLayoutIn fieldset {
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.formLayout input {
+  height: 60px;
+  margin: 5px;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+  border: 2px solid var(--secondary-color);
+}
+.formLayoutIn input {
+  height: 60px;
+  margin: 5px;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+  border: 2px solid var(--secondary-color);
+}
+.formL {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  flex-direction: column;
+}
+#signUpBtn {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  font-size: 20px;
+}
